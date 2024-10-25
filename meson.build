@@ -42,8 +42,8 @@ libremotetiff = library('remotetiff',
   gnu_symbol_visibility : 'hidden',
   include_directories : '.',
   dependencies : [
-    dependency('azure-identity-cpp', method : 'cmake', modules : ['Threads::Threads', 'OpenSSL::Crypto', 'OpenSSL::SSL', 'OpenSSL::applink', 'ZLIB::ZLIB', 'CURL::libcurl_static', 'CURL::libcurl', 'Azure::azure-core', 'Azure::azure-identity']),
-    dependency('azure-storage-blobs-cpp', method : 'cmake', modules : ['Threads::Threads', 'OpenSSL::Crypto', 'OpenSSL::SSL', 'OpenSSL::applink', 'ZLIB::ZLIB', 'CURL::libcurl_static', 'CURL::libcurl', 'Azure::azure-core', 'LibXml2::LibXml2', 'Azure::azure-storage-common', 'Azure::azure-storage-blobs']),
+    dependency('azure-identity-cpp', method : 'cmake', modules : ['OpenSSL::SSL', 'Azure::azure-core', 'Azure::azure-identity']),
+    dependency('azure-storage-blobs-cpp', method : 'cmake', modules : ['Azure::azure-core', 'Azure::azure-storage-common', 'Azure::azure-storage-blobs']),
   ],
   install : false,
 )
