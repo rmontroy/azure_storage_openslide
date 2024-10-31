@@ -42,6 +42,7 @@ libremotetiff = library('remotetiff',
   gnu_symbol_visibility : 'hidden',
   include_directories : '.',
   dependencies : [
+    tiff_dep,
     dependency('azure-identity-cpp', method : 'cmake', modules : ['OpenSSL::SSL', 'Azure::azure-core', 'Azure::azure-identity']),
     dependency('azure-storage-blobs-cpp', method : 'cmake', modules : ['Azure::azure-core', 'Azure::azure-storage-common', 'Azure::azure-storage-blobs']),
   ],
